@@ -1,0 +1,42 @@
+<script src="element.js"></script>
+<script src="https://file-size.github.io/element.js"></script>
+
+<style>
+    body {
+        font: 19px arial
+    }
+    bar-codes{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap:2em;
+    }
+</style>
+
+<h1>&lt;jsbar-code> Web Component</h1>
+<b>Using library: <a href="https://lindell.me/JsBarcode/">https://lindell.me/JsBarcode/</a></b>
+
+<p></p>
+
+<bar-codes>
+    <jsbar-code value="210169"></jsbar-code>
+    <code>
+    &lt;jsbar-code value="210169">&lt;/jsbar-code>
+</code>
+    <jsbar-code value="12312023" fontSize="10"></jsbar-code>
+    <code>
+    &lt;jsbar-code value="12312023" fontSize="10">&lt;/jsbar-code>
+</code>
+    <jsbar-code format="upc" value="123456789012" textmargin="0" fontoptions="bold"></jsbar-code>
+    <code>
+    &lt;jsbar-code format="upc" value="123456789012" textmargin="0" fontoptions="bold">&lt;/jsbar-code>
+</code>
+    <jsbar-code format="pharmacode" lineColor="#0aa" width="4" height="40" value="21" displayValue="0"></jsbar-code>
+    <code>
+    &lt;jsbar-code format="pharmacode" lineColor="#0aa" width="4" height="40" value="21" displayValue="0">&lt;/jsbar-code>
+</code>
+</bar-codes>
+
+<h2>The GZipped size loading <a
+        href="https://jsbar-code.github.io/element.min.js">https://jsbar-code.github.io/element.min.js</a> is:</h2>
+
+<file-size gz src="https://jsbar-code.github.io/element.min.js"></file-size>
